@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <!-- Import Roboto font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Desktop Navigation with Mode Toggle Switch -->
+  <nav id="desktop-nav">
+    <div class="nav-left">
+      <label class="switch" id="mode-toggle">
+        <input type="checkbox" style="display:none" />
+        <span class="slider round"></span>
+      </label>
+      <div class="logo">Prince Kumar</div>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Mobile Navigation: Only Dark Mode Toggle Button is visible on small screens -->
+  <nav id="mobile-nav">
+    <div class="logo">Prince Kumar</div>
+    <button id="mobile-dark-mode">🌙</button>
+  </nav>
+  <!-- Profile Section -->
+  <section id="profile" class="reveal">
+    <div class="section__pic-container">
+      <img src="./assets/1697004420411.jpeg" alt="Prince profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Prince Kumar</h1>
+      <p class="section__text__p2" id="dynamic-text">Recent CSE graduate from</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 blink" onclick="window.open('./assets/princeresume.pdf')">
+          Download CV
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/prince-kumar-214478252'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/princekmr65'" />
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="reveal">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="text-container">
+            <p>
+              A recent Computer Science and Engineering graduate passionate about extracting actionable insights through
+              data analysis. With a strong command of C++, Python, SQL, and Excel, I've developed interactive dashboards
+              and managed diverse datasets. Eager to leverage my technical expertise to transform raw data into
+              strategic intelligence and support data-driven decision-making in a forward-thinking organization.
+            </p>
+          </div>
+          <h1 class="title">Education</h1>
+          <div class="education-cards">
+            <div class="education-card">
+              <h3>Bachelor of Technology</h3>
+              <p>CMR University, Bengaluru, Karnataka</p>
+              <p>2020-2024</p>
+            </div>
+            <div class="education-card">
+              <h3>Senior Secondary School</h3>
+              <p>Plus Two High School, Madhubani, Bihar</p>
+              <p>2017-2019</p>
+            </div>
+            <div class="education-card">
+              <h3>Secondary School</h3>
+              <p>Plus Two High School, Madhubani, Bihar</p>
+              <p>2016-2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="reveal">
+    <p class="section__text__p1">My Expertise</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-carousel">
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-card active">
+          <img src="./assets/c.png" alt="C Icon" class="skill-icon">
+          <h3>C</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:80%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/c++.png" alt="C/C++ Icon" class="skill-icon">
+          <h3>C++</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:80%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/python.png" alt="Python Icon" class="skill-icon">
+          <h3>Python</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:77%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/excel.png" alt="Excel Icon" class="skill-icon">
+          <h3>Excel</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:79%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/sql.png" alt="SQL Icon" class="skill-icon">
+          <h3>SQL</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:90%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/powerbi.png" alt="Power Bi Icon" class="skill-icon">
+          <h3>Power Bi</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:80%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/Tableau.png" alt="Tableau Icon" class="skill-icon">
+          <h3>Tableau</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:75%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/html.png" alt="HTML Icon" class="skill-icon">
+          <h3>HTML</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:75%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/css-3.png" alt="CSS Icon" class="skill-icon">
+          <h3>CSS</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:75%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/jS.png" alt="JavaScript Icon" class="skill-icon">
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:68%;"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <img src="./assets/algorithm.png" alt="Data Structures & Algorithms Icon" class="skill-icon">
+          <h3>Data Structures & Algorithms</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width:76%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow-buttons">
+      <button class="slider-arrow left" id="prevBtn">&#10094;</button>
+      <button class="slider-arrow right" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects" class="reveal">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="project-container color-container">
+        <h2 class="project-title">Road Accident Dashboard</h2>
+        <div class="project-row">
+          <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          <div class="project-description">
+            <ul>
+              <li>Utilized Excel to build an interactive Road Accident Dashboard displaying key metrics like total, fatal, serious, and slight casualties.</li>
+              <li>Performed data cleaning and formatting to ensure accurate and reliable results.</li>
+              <li>Employed pivot charts and slicers to visualize current vs. previous year casualty trends for quick comparisons.</li>
+              <li>Highlighted casualties by vehicle type, road type, and area to pinpoint critical focus zones.</li>
+              <li>Provided a user-friendly layout and intuitive design for clear, actionable insights.</li>
+            </ul>
+            <div class="btn-container">
+              <button class="btn btn-color-2 blink project-btn" onclick="location.href='https://github.com/princekmr65/Road-Accident-Dashboard.git'">Live</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container color-container">
+        <h2 class="project-title">Walmart Sales Analysis</h2>
+        <div class="project-row">
+          <img src="./assets/walmart" alt="Project 2" class="project-img" />
+          <div class="project-description">
+            <ul>
+              <li>Utilize SQL to analyze Walmart's sales data from branches in Mandalay, Yangon, and Naypyitaw.</li>
+              <li>Examine product lines to identify top performers and areas needing improvement.</li>
+              <li>Analyze sales trends to evaluate marketing strategies and drive revenue growth.</li>
+              <li>Segment customers to uncover purchase behaviors and profitability insights.</li>
+              <li>Generate actionable insights that inform strategic adjustments and boost sales performance.</li>
+              <li>This SQL project offers a clear foundation for informed decisions and sustainable growth.</li>
+            </ul>
+            <div class="btn-container">
+              <button class="btn btn-color-2 blink project-btn" onclick="location.href='https://github.com/princekmr65/Walmart-Sales-Data-Analysis-.git'">Live</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-container color-container">
+        <h2 class="project-title">HR Analytics Dashboard</h2>
+        <div class="project-row">
+          <img src="./assets/HR ANALYTICS DASHBOARD.png" alt="Project 3" class="project-img" />
+          <div class="project-description">
+            <ul>
+              <li>Developed an HR analytics dashboard in Power BI focusing on employee attrition and key workforce metrics.</li>
+              <li>Displays total employees, average tenure, average income, overall attrition count, and average employee age.</li>
+              <li>Breaks down attrition by education level, age range, salary, job role, and gender for detailed insights.</li>
+              <li>Incorporates job satisfaction data to identify trends affecting engagement and retention.</li>
+              <li>Enables HR teams to pinpoint high-risk groups, refine strategies, and improve employee retention.</li>
+            </ul>
+            <div class="btn-container">
+              <button class="btn btn-color-2 blink project-btn" onclick="location.href='https://github.com/princekmr65/HR-ANALYTICS-DASHBOARD.git'">Live</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section id="contact" class="reveal">
+    <p class="section__text__p1">Get In Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:princekr643@gmail.com">princekr643@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/prince-kumar-214478252">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2024 Prince Kumar. All Rights Reserved.</p>
+  </footer>
+  
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
